@@ -1,0 +1,14 @@
+plugins {
+    id "java"
+    id "com.diffplug.spotless" version "5.8.2"
+}
+
+repositories {
+    mavenCentral()
+}
+
+spotless {
+    java {
+        eclipse().configFile("spotless.eclipseformat.xml")
+    }
+}
